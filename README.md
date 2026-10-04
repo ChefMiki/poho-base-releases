@@ -4,13 +4,15 @@
 
 This repository only hosts the downloads. The app is a free preview for Windows 10 and 11.
 
-## See the website
+## Website
 
-Download **PoHo-Base-website.zip** from the [latest release](../../releases/latest), unzip it and open **index.html** in your browser. (It is also in the `website` folder here.)
+**[mikicarbre.github.io/poho-base-releases](https://mikicarbre.github.io/poho-base-releases/)**
 
 ## Download
 
-**[Download the latest version](../../releases/latest)**, then open `PoHo-Base-…-win-x64.zip` under *Assets*.
+**[Download PoHo Base for Windows](../../releases/latest/download/PoHo-Base-win-x64.zip)**
+
+Installed copies update themselves: every update is signed, and PoHo only installs updates with a valid signature.
 
 ## Install
 
