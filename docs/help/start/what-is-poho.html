@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>What PoHo does for you · PoHo Base Help</title>
+<meta name="description" content="PoHo Base remembers every project on your computer and where you stopped in each AI chat, and puts you back in with one click." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html" aria-current="page">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Welcome</p>
+<h1>What PoHo does for you</h1>
+<p class="lead">PoHo Base remembers every project on your computer and where you stopped in each AI chat, and puts you back in with one click.</p>
+<p>PoHo Base is the place you return to work. It knows the projects on your computer, remembers where you stopped in each one, in any AI coding tool, and takes you back there in one click.</p>
+<p>It works fully without AI. There is no account, nothing to download besides the app, and PoHo never uploads your source files. Only with your own Claude key does it send short excerpts (README, CLAUDE.md, file names, your prompts and the last replies) to Claude.</p>
+<h2 id="find">Find</h2>
+<p>Your projects are already there. PoHo looks only in the folders you allow, or in the folders where your AI tools worked, and makes a page for each project from what is really on disk: its README, stack, scripts, git branch, last commit and uncommitted changes.</p>
+<p>Press <strong>Ctrl P</strong> in the app, or <strong>Alt+Space</strong> from anywhere, to jump to any project or to something you once asked an AI.</p>
+<h2 id="remember">Remember</h2>
+<p>PoHo reads the chat history of Claude Code, Codex, Gemini CLI and OpenCode, and the plans and task lists Antigravity writes. For every project it keeps:</p>
+<ul><li>what you asked, and which files changed;</li><li>what was left open;</li><li>time and tokens spent with AI.</li></ul>
+<p>It keeps a copy even after the AI tool deletes its old chats. Home always starts with the project you were last in and where you stopped.</p>
+<h2 id="return">Return</h2>
+<ul><li><strong>Continue</strong> reopens the exact chat where it ended, in your editor or a terminal.</li><li><strong>Pick up with …</strong> starts any installed AI tool with a note of where the work stopped, so you can switch tools without explaining everything again.</li><li>New Claude Code and Cursor chats can start already knowing the project, your last session and what is left. See <a href="../get-started/connect-ai-tools.html">Connect your AI tools</a>.</li></ul>
+<h2 id="keep-it-safe">Keep it safe</h2>
+<p>PoHo never deletes your project files, and changes them only when you ask. It can only forget its own memory of a project. Before an AI session starts from PoHo, or in a connected Claude Code or Cursor, PoHo saves a snapshot of a git project, so you can put single files back later.</p>
+<div class="callout callout-note"><p><strong>Note:</strong> AI is an optional add-on. A free local AI (Ollama) or your own Claude key adds summaries in plain words. Everything else works without it.</p></div>
+<p>Next: <a href="app-map.html">Map of the app</a> or <a href="../get-started/install.html">Install PoHo</a>.</p>
+<nav class="pager"><span></span><a class="next" href="../start/app-map.html"><span>Next</span>Map of the app</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#find">Find</a></li><li><a href="#remember">Remember</a></li><li><a href="#return">Return</a></li><li><a href="#keep-it-safe">Keep it safe</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

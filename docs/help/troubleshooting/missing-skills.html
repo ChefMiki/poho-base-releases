@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>I don’t see all my skills · PoHo Base Help</title>
+<meta name="description" content="Where PoHo looks for skills, why one can be missing, and how to check with Where PoHo looked." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html" aria-current="page">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Troubleshooting</p>
+<h1>I don’t see all my skills</h1>
+<p class="lead">Where PoHo looks for skills, why one can be missing, and how to check with Where PoHo looked.</p>
+<p>PoHo lists only skills in the folders it knows about. Open <strong>Projects → Skills</strong>, scroll down and open <strong>Where PoHo looked</strong>: it lists every folder PoHo searched and how many skills it found in each.</p>
+<h2 id="where-poho-looks">Where PoHo looks</h2>
+<p>A skill is a folder with a <code>SKILL.md</code> file in it. PoHo looks in:</p>
+<ul><li>Your skills folders: <code>~/.claude/skills</code>, <code>~/.agents/skills</code>, <code>~/.cursor/skills</code> and <code>~/.codex/skills</code>.</li><li>The same four folders inside every project PoHo knows.</li><li>Skills synced from your claude.ai account, in <code>~/.claude/skills/synced</code>. Their source shows as “Your Claude account”.</li><li>Installed Claude Code plugins.</li></ul>
+<p>Hidden folders, such as <code>.trash</code> or <code>.git</code>, are skipped.</p>
+<h2 id="why-a-skill-can-be-missing">Why a skill can be missing</h2>
+<ul><li><strong>The project is not in PoHo.</strong> Skills inside a project folder are found only when PoHo knows that project. Add its folder: <a href="../get-started/add-folders.html">Add your project folders</a>.</li><li><strong>The project is archived, or its folder is gone.</strong> PoHo does not look inside it.</li><li><strong>The skill is somewhere else.</strong> A skill outside the folders above is not found.</li><li><strong>The folder has no <code>SKILL.md</code>.</strong> Without it, PoHo does not see a skill.</li><li><strong>The list is out of date.</strong> Click <strong>Look at your skills again</strong> (the refresh button next to the search field).</li></ul>
+<h2 id="check-it">Check it</h2>
+<ol><li>Open <strong>Projects → Skills</strong>.</li><li>Open <strong>Where PoHo looked</strong> at the bottom.</li><li>Find the folder where you expect the skill. If it is not listed, PoHo does not look there, or the folder does not exist. If it shows 0, PoHo found no skill folder with a <code>SKILL.md</code> in it.</li></ol>
+<div class="callout callout-tip"><p><strong>Tip:</strong> A plugin installed for a folder PoHo does not know counts as an “other folder” in the plugin’s details.</p></div>
+<p>Still missing? <a href="../troubleshooting/report-a-problem.html">Report a problem</a> and say which folder the skill is in.</p>
+<nav class="pager"><a class="prev" href="../settings/settings.html"><span>Previous</span>Every setting, explained</a><a class="next" href="../troubleshooting/ai-not-shown.html"><span>Next</span>PoHo doesn’t show my AI working</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#where-poho-looks">Where PoHo looks</a></li><li><a href="#why-a-skill-can-be-missing">Why a skill can be missing</a></li><li><a href="#check-it">Check it</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

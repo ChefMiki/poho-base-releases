@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Add your project folders · PoHo Base Help</title>
+<meta name="description" content="Add a project folder, or a folder that holds many projects, and PoHo finds the projects inside. It never searches your drives on its own." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html" aria-current="page">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Get started</p>
+<h1>Add your project folders</h1>
+<p class="lead">Add a project folder, or a folder that holds many projects, and PoHo finds the projects inside. It never searches your drives on its own.</p>
+<p>Click <strong>Add folder</strong> on the <strong>Projects</strong> page, then drop folders in or click to choose them. PoHo finds the projects inside and adds a page for each. It only looks in folders you add, and never searches your drives on its own.</p>
+<h2 id="add-a-folder">Add a folder</h2>
+<ol><li>Open <strong>Projects</strong> in the top bar.</li><li>Click <strong>Add folder</strong>.</li><li>Drop one or more folders on <strong>Add project folders</strong>, or click the folder button to choose them.</li></ol>
+<p>You can add a single project, or a folder that holds many projects, such as <code>C:\Users\you\code</code>. PoHo looks inside for git repos and project files like <code>package.json</code>, <code>pyproject.toml</code>, <code>Cargo.toml</code>, <code>go.mod</code>, <code>CLAUDE.md</code> or <code>AGENTS.md</code>. Each one becomes a project.</p>
+<p>PoHo reads project names, READMEs and git status. Nothing is uploaded.</p>
+<h2 id="folders-where-your-ai-worked">Folders where your AI worked</h2>
+<p>When an AI tool works in a folder PoHo does not know yet, a small card appears at the bottom right: “Claude Code worked in my-app”. Click <strong>Add to PoHo</strong> to add it as one project, or <strong>Don’t add</strong> to stop being asked about it.</p>
+<p>If PoHo lists a lot of folders (more than 150), it offers <strong>Choose folders</strong> so you can keep only the ones where you worked with AI, or <strong>Keep all</strong>.</p>
+<h2 id="find-projects-you-added-later">Find projects you added later</h2>
+<p>PoHo looks again every 15 minutes and when you start it. To look right now, open ⚙ → <strong>Look for new projects</strong>.</p>
+<h2 id="manage-your-folders">Manage your folders</h2>
+<p>Open <strong>Settings → Projects &amp; folders</strong>.</p>
+<ul><li><strong>Folders PoHo reads</strong> lists every folder, with how many projects PoHo found in it. <strong>Add folder</strong> adds another.</li><li>The X next to a folder (<strong>Stop watching this folder</strong>) makes PoHo forget that folder’s projects. The files on disk are not touched.</li><li><strong>Keep only my AI work</strong> keeps only the folders where you worked with AI, plus projects you starred, wrote notes for or archived.</li><li><strong>Scan depth</strong> sets how many folder levels below an added folder PoHo looks: 2 to 6, 4 by default. Raise it if projects deep in a folder are missing. Folders added from your AI work are one project each and are not searched.</li></ul>
+<div class="callout callout-note"><p><strong>Note:</strong> Removing a folder or a project only changes what PoHo remembers. PoHo never deletes your files.</p></div>
+<p>Next: <a href="connect-ai-tools.html">Connect your AI tools</a>.</p>
+<nav class="pager"><a class="prev" href="../get-started/first-start.html"><span>Previous</span>The first start</a><a class="next" href="../get-started/connect-ai-tools.html"><span>Next</span>Connect your AI tools</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#add-a-folder">Add a folder</a></li><li><a href="#folders-where-your-ai-worked">Folders where your AI worked</a></li><li><a href="#find-projects-you-added-later">Find projects you added later</a></li><li><a href="#manage-your-folders">Manage your folders</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

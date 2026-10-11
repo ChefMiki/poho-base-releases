@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Install and update skills · PoHo Base Help</title>
+<meta name="description" content="Install a skill from Discover into your skills folder, and update the ones PoHo installed." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html" aria-current="page">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Skills</p>
+<h1>Install and update skills</h1>
+<p class="lead">Install a skill from Discover into your skills folder, and update the ones PoHo installed.</p>
+<p>Click <strong>Install</strong> next to a skill in <strong>Projects → Skills → Discover</strong>. PoHo puts it in your skills folder, <code>~/.claude/skills</code>, so every project gets it.</p>
+<h2 id="install-a-skill">Install a skill</h2>
+<ol><li>Open <strong>Projects → Skills → Discover</strong>.</li><li>Click a repository to open it.</li><li>Click <strong>Install</strong> next to a skill marked <strong>Not on this computer</strong>.</li><li>If the skill runs scripts, PoHo asks first. Read them on GitHub, then confirm.</li></ol>
+<p>What PoHo does:</p>
+<ul><li>It takes the skill as it is at the repository’s latest commit and <strong>pins</strong> it to that commit. A <code>SOURCE.txt</code> file in the skill’s folder notes where it came from and that PoHo installed it.</li><li>It <strong>never replaces</strong> anything. If you already have a skill with that name, it stops and tells you: “PoHo never replaces it.”</li></ul>
+<h2 id="use-it-in-a-chat">Use it in a chat</h2>
+<p>New AI chats load the skill. In a chat that is already open, type <code>/reload-plugins</code>, or use <strong>More ways → Restart this chat</strong>. See <a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a>.</p>
+<h2 id="check-for-updates">Check for updates</h2>
+<ol><li>Open <strong>Projects → Skills</strong>.</li><li>Click <strong>Check for updates</strong>.</li></ol>
+<p>PoHo asks GitHub whether skills in your skills folder with a pinned source changed. It looks only at changes to the skill’s own folder, so other commits in the repository don’t count. Skills with a newer version get an <strong>Update</strong> chip. This works for skills PoHo installed and for skills whose source note you wrote yourself.</p>
+<h2 id="update-a-skill">Update a skill</h2>
+<p>Open the skill’s row. You see what is newer on GitHub, then:</p>
+<ul><li><strong>Update</strong>, for skills PoHo installed in <code>~/.claude/skills</code>. PoHo downloads the new version, moves the old one to its backups and puts the new one in place. If something goes wrong, the old one goes back.</li><li><strong>See the changes on GitHub</strong>, for every other skill. PoHo only updates skills it installed; update the others yourself.</li></ul>
+<div class="callout callout-note"><p><strong>Note:</strong> The old version is kept in PoHo’s own folder, <code>%APPDATA%\PoHo Base\skill-backups</code>. PoHo never deletes your files.</p></div>
+<p>After an update, new AI chats load the new version.</p>
+<nav class="pager"><a class="prev" href="../skills/skills-for-a-project.html"><span>Previous</span>Skills that fit a project</a><a class="next" href="../connect/obsidian.html"><span>Next</span>Obsidian</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#install-a-skill">Install a skill</a></li><li><a href="#use-it-in-a-chat">Use it in a chat</a></li><li><a href="#check-for-updates">Check for updates</a></li><li><a href="#update-a-skill">Update a skill</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

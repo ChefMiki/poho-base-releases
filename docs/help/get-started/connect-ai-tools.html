@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Connect your AI tools · PoHo Base Help</title>
+<meta name="description" content="PoHo remembers chats from your AI coding tools on its own; connect Claude Code and Cursor so new chats start knowing where you stopped." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html" aria-current="page">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Get started</p>
+<h1>Connect your AI tools</h1>
+<p class="lead">PoHo remembers chats from your AI coding tools on its own; connect Claude Code and Cursor so new chats start knowing where you stopped.</p>
+<p>Most AI tools need no setup: PoHo reads the chats they save on your computer. Connect Claude Code and Cursor as well, and every new chat in them starts already knowing the project and where you stopped.</p>
+<h2 id="what-works-on-its-own">What works on its own</h2>
+<p>With <strong>Read my AI coding sessions</strong> on (see <a href="first-start.html">The first start</a>), PoHo reads the chat history of:</p>
+<ul><li><strong>Claude Code</strong></li><li><strong>Codex</strong></li><li><strong>Gemini CLI</strong></li><li><strong>OpenCode</strong></li><li><strong>Antigravity</strong> (its plans, task lists and walkthroughs; not its conversations)</li></ul>
+<p>Each chat shows up on its project’s page under <strong>Sessions</strong>. Nothing is uploaded.</p>
+<div class="callout callout-tip"><p><strong>Tip:</strong> Claude Code deletes its old chats after 30 days by default. PoHo keeps a copy, so you can still find what you asked.</p></div>
+<h2 id="connect-claude-code-and-cursor">Connect Claude Code and Cursor</h2>
+<p>Connecting adds a small hook to the tool’s settings. When you start a new chat, the AI gets a short briefing: what the project is, your last session in any tool, what was left open, uncommitted files and your notes. PoHo also sees when the AI is waiting for you or has finished, for <strong>Live now</strong> on Home and for notifications.</p>
+<ol><li>On Home, find the <strong>Your tools</strong> card.</li><li>Click <strong>Connect</strong> next to <strong>Claude Code</strong> or <strong>Cursor</strong>.</li><li>Read what it does, then click <strong>Connect</strong>.</li></ol>
+<p>You can also do it in <strong>Settings → AI agents → Agent memory</strong>, under <strong>Briefing at the start of a session</strong>: click <strong>Connect</strong> next to <strong>Claude Code</strong> or <strong>Cursor Agent</strong>. <strong>Disconnect</strong> removes PoHo’s hook again.</p>
+<h2 id="let-your-ai-ask-poho">Let your AI ask PoHo</h2>
+<p>In the same place, under <strong>PoHo as a tool the agent can ask</strong>, you can connect <strong>Claude Code</strong>, <strong>Cursor</strong> and <strong>Codex</strong>. The AI can then ask PoHo where you stopped on a project, which earlier session dealt with something, and which of your projects use a technology. PoHo only reads; it never changes your projects. More in <a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a>.</p>
+<div class="callout callout-note"><p><strong>Note:</strong> New chats pick up these changes. Chats that are already open are not affected. Connecting works only in the installed app, and only for tools found on this computer.</p></div>
+<h2 id="more-tools">More tools</h2>
+<p><strong>Connect more tools</strong> at the bottom of <strong>Your tools</strong> shows the tools that are not on this computer yet, with a link to get each one. Once installed, their chats join your project memory automatically.</p>
+<p>Next: <a href="updates.html">Updates and beta versions</a>. To see what the AI is told, read <a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a>.</p>
+<nav class="pager"><a class="prev" href="../get-started/add-folders.html"><span>Previous</span>Add your project folders</a><a class="next" href="../get-started/updates.html"><span>Next</span>Updates and beta versions</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#what-works-on-its-own">What works on its own</a></li><li><a href="#connect-claude-code-and-cursor">Connect Claude Code and Cursor</a></li><li><a href="#let-your-ai-ask-poho">Let your AI ask PoHo</a></li><li><a href="#more-tools">More tools</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

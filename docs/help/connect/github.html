@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>GitHub · PoHo Base Help</title>
+<meta name="description" content="Sign in with the GitHub CLI to see which projects are on GitHub, push in one click, put a project on GitHub safely and see CI results." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html" aria-current="page">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Connect other apps</p>
+<h1>GitHub</h1>
+<p class="lead">Sign in with the GitHub CLI to see which projects are on GitHub, push in one click, put a project on GitHub safely and see CI results.</p>
+<p>Sign in to GitHub once and PoHo shows which projects are on GitHub, private or public, and which have commits to push. It can also put a local project on GitHub for you, without uploading your <code>.env</code> files.</p>
+<h2 id="sign-in">Sign in</h2>
+<p>PoHo uses the official GitHub CLI (<code>gh</code>). You sign in on github.com in your browser; PoHo never sees your password or token.</p>
+<ol><li>Open <strong>Settings</strong> (Ctrl+,) and go to <strong>AI agents</strong>.</li><li>Under <strong>Your AI tools</strong>, find <strong>GitHub</strong> and click <strong>Sign in</strong>.</li><li>Click <strong>Sign in with GitHub</strong>. If the GitHub CLI isn’t installed, the button says <strong>Install GitHub CLI</strong>; PoHo installs it in a terminal you can see.</li><li>Finish the sign-in in your browser. PoHo notices on its own.</li></ol>
+<p>Once you’re signed in, your open pull requests also appear in <strong>Needs you</strong> on <strong>Home</strong>.</p>
+<h2 id="what-you-see-on-each-project">What you see on each project</h2>
+<p>The git badge on a project tells you where it stands:</p>
+<ul><li><strong>Connect to GitHub</strong>: not on GitHub yet. Click to put it there.</li><li>An arrow with a number: commits not pushed yet. Click to push.</li><li><strong>Private</strong> or <strong>Public</strong>: on GitHub and up to date. Click to open the repository.</li></ul>
+<h2 id="put-a-project-on-github">Put a project on GitHub</h2>
+<ol><li>Click <strong>Connect to GitHub</strong> on the badge, or open the project’s <strong>⋯</strong> menu and choose <strong>Put on GitHub…</strong>.</li><li>Check the repository name.</li><li>Choose <strong>Private</strong> (“Only you”) or <strong>Public</strong> (“Anyone can see the code”). Private is the default.</li><li>Read <strong>What PoHo will do</strong>, then click <strong>Create private repository</strong> (or public).</li></ol>
+<p>Before it uploads anything, PoHo adds <code>.env</code> files, packages and build output to <code>.gitignore</code>. It refuses if a <code>.env</code> file is already tracked by git, or if a file is too big for GitHub, and tells you how to fix it.</p>
+<div class="callout callout-note"><p><strong>Note:</strong> PoHo doesn’t commit your work for you. A brand-new repository gets a first commit; otherwise PoHo commits only the <code>.gitignore</code> change and lists your uncommitted files as not included.</p></div>
+<h2 id="ci-in-health">CI in Health</h2>
+<p>If a project on GitHub has workflows, its <strong>Health</strong> shows <strong>Tests (CI)</strong> with the latest run: <strong>Passing</strong>, <strong>Failing</strong>, <strong>Running now</strong> or <strong>Skipped</strong>. Click it to open the run on GitHub. Health is on the project page, below the map.</p>
+<h2 id="what-is-sent">What is sent</h2>
+<p>Only while the GitHub CLI is signed in: after each scan PoHo asks GitHub, as you, whether your repositories are public or private, and Health asks for the latest CI run.</p>
+<nav class="pager"><a class="prev" href="../connect/obsidian.html"><span>Previous</span>Obsidian</a><a class="next" href="../connect/ai-add-on.html"><span>Next</span>The AI add-on (Ollama or a Claude key)</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#sign-in">Sign in</a></li><li><a href="#what-you-see-on-each-project">What you see on each project</a></li><li><a href="#put-a-project-on-github">Put a project on GitHub</a></li><li><a href="#ci-in-health">CI in Health</a></li><li><a href="#what-is-sent">What is sent</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

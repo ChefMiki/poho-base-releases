@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Obsidian · PoHo Base Help</title>
+<meta name="description" content="Keep your projects, AI sessions, collections and skills as linked notes in an Obsidian vault, and browse them in the graph view." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html" aria-current="page">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Connect other apps</p>
+<h1>Obsidian</h1>
+<p class="lead">Keep your projects, AI sessions, collections and skills as linked notes in an Obsidian vault, and browse them in the graph view.</p>
+<p>Connect an Obsidian vault and PoHo keeps a note for every project, collection and skill your AI used, and for your recent AI sessions, linked so the graph view shows how they connect. PoHo writes only into a <code>PoHo</code> folder in that vault and never touches your other notes.</p>
+<h2 id="connect-a-vault">Connect a vault</h2>
+<ol><li>Make or open a vault in Obsidian first. PoHo lists the vaults Obsidian knows.</li><li>In PoHo, open <strong>Settings</strong> (Ctrl+,) and go to <strong>AI agents</strong>.</li><li>Under <strong>Obsidian</strong>, pick the vault.</li><li>Click <strong>Connect</strong>.</li></ol>
+<p>PoHo writes the notes right away. Open the vault in Obsidian and try the graph view.</p>
+<h2 id="what-poho-writes">What PoHo writes</h2>
+<p>Everything goes into <code>&lt;your vault&gt;\PoHo</code>:</p>
+<ul><li><strong>PoHo Home</strong>: your projects by collection and your most used skills.</li><li><strong>Projects</strong>: one note each, with what it is, where you stopped, what was left open, your notes, its AI sessions, the skills used there and the skills that fit.</li><li><strong>Sessions</strong>: one note for each of your newest 300 AI sessions: what it did, what was left open, files touched and skills used.</li><li><strong>Collections</strong> and <strong>Skills</strong> (skills your AI actually used, with the projects they were used in).</li></ul>
+<p>Your prompts are not copied, only titles and summaries. Keys, tokens and passwords are removed from every note.</p>
+<h2 id="keeping-it-current">Keeping it current</h2>
+<p>PoHo updates the notes after every scan. To update by hand, click <strong>Update now</strong>. <strong>Open in Obsidian</strong> opens the vault.</p>
+<p>On a project page, <strong>More ways → Open its note in Obsidian</strong> jumps straight to that project’s note.</p>
+<h2 id="your-edits-are-safe">Your edits are safe</h2>
+<ul><li>If you edit a note PoHo wrote, PoHo leaves it alone from then on and tells you how many it skipped.</li><li>PoHo never overwrites a note it didn’t write and never writes outside the <code>PoHo</code> folder.</li><li>PoHo never deletes a note. Notes of a project you removed stay.</li><li>PoHo doesn’t change Obsidian’s settings or its vault list.</li></ul>
+<p><strong>Disconnect</strong> stops the updates; the notes stay in your vault.</p>
+<div class="callout callout-note"><p><strong>Note:</strong> PoHo sends nothing over the internet for this. If you sync the vault, for example with Obsidian Sync or a cloud folder, the notes travel with it.</p></div>
+<nav class="pager"><a class="prev" href="../skills/install-and-update-skills.html"><span>Previous</span>Install and update skills</a><a class="next" href="../connect/github.html"><span>Next</span>GitHub</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#connect-a-vault">Connect a vault</a></li><li><a href="#what-poho-writes">What PoHo writes</a></li><li><a href="#keeping-it-current">Keeping it current</a></li><li><a href="#your-edits-are-safe">Your edits are safe</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

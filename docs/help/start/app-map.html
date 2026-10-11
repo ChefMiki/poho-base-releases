@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Map of the app · PoHo Base Help</title>
+<meta name="description" content="The screens of PoHo Base, what is on each, and where PoHo’s information comes from." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html" aria-current="page">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Welcome</p>
+<h1>Map of the app</h1>
+<p class="lead">The screens of PoHo Base, what is on each, and where PoHo’s information comes from.</p>
+<p>PoHo has three pages, <strong>Home</strong>, <strong>Projects</strong> and <strong>History</strong>, plus a page for each project and one Settings window. The top bar takes you to all of them.</p>
+<figure class="diagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" role="img" aria-labelledby="map-t map-d">
+  <title id="map-t">Map of PoHo Base</title>
+  <desc id="map-d">On the left, what PoHo reads: your project folders, your AI tools' chat history, git, your skills, and the optional AI add-on and GitHub. In the middle, PoHo on your computer. On the right, the screens: Home, Projects with Skills, the project page with Map, Sessions, Notes and Setup, History and Settings. At the bottom, what PoHo gives back: a briefing and answers to your AI, and notes in Obsidian.</desc>
+  <style>
+    .box { fill: var(--sheet, #fff); stroke: var(--line-2, #d6d6d1); stroke-width: 1.2 }
+    .hub { fill: var(--accent-soft, #e8f0fe); stroke: var(--accent, #1f6feb); stroke-width: 1.6 }
+    .t { fill: var(--ink, #17181c); font: 600 14px var(--font, sans-serif) }
+    .s { fill: var(--muted, #6e727c); font: 400 12px var(--font, sans-serif) }
+    .h { fill: var(--muted, #6e727c); font: 600 11.5px var(--font, sans-serif); letter-spacing: .06em; text-transform: uppercase }
+    .ln { stroke: var(--line-2, #d6d6d1); stroke-width: 1.4; fill: none }
+    .lna { stroke: var(--accent, #1f6feb); stroke-width: 1.4; fill: none; stroke-dasharray: 5 4 }
+    .opt { stroke-dasharray: 4 3 }
+  </style>
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--line-2, #c9c9c4)"/></marker>
+    <marker id="ara" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="var(--accent, #1f6feb)"/></marker>
+  </defs>
+
+  <text class="h" x="20" y="28">What PoHo reads</text>
+  <g>
+    <rect class="box" x="20" y="44" width="230" height="52" rx="12"/><text class="t" x="36" y="66">Your project folders</text><text class="s" x="36" y="84">only the ones you add</text>
+    <rect class="box" x="20" y="106" width="230" height="52" rx="12"/><text class="t" x="36" y="128">AI tools’ chat history</text><text class="s" x="36" y="146">Claude Code, Cursor, Codex…</text>
+    <rect class="box" x="20" y="168" width="230" height="52" rx="12"/><text class="t" x="36" y="190">Git</text><text class="s" x="36" y="208">commits, changes, branches</text>
+    <rect class="box" x="20" y="230" width="230" height="52" rx="12"/><text class="t" x="36" y="252">Your skills and plugins</text><text class="s" x="36" y="270">and your Claude account’s</text>
+    <rect class="box opt" x="20" y="292" width="230" height="52" rx="12"/><text class="t" x="36" y="314">AI add-on (optional)</text><text class="s" x="36" y="332">Ollama or your Claude key</text>
+    <rect class="box opt" x="20" y="354" width="230" height="52" rx="12"/><text class="t" x="36" y="376">GitHub (optional)</text><text class="s" x="36" y="394">updates, skills, visibility</text>
+  </g>
+  <path class="ln" d="M250 70 C300 70 300 220 340 220" marker-end="url(#ar)"/>
+  <path class="ln" d="M250 132 C300 132 300 225 340 225"/>
+  <path class="ln" d="M250 194 C300 194 300 230 340 230"/>
+  <path class="ln" d="M250 256 C300 256 300 235 340 235"/>
+  <path class="ln" d="M250 318 C300 318 300 240 340 240"/>
+  <path class="ln" d="M250 380 C300 380 300 245 340 245"/>
+
+  <rect class="hub" x="340" y="170" width="220" height="120" rx="18"/>
+  <text class="t" x="360" y="204" style="font-size:18px">PoHo Base</text>
+  <text class="s" x="360" y="226">on your computer</text>
+  <text class="s" x="360" y="246">remembers every project and</text>
+  <text class="s" x="360" y="264">where you stopped, in any AI tool</text>
+
+  <text class="h" x="620" y="28">What you see</text>
+  <g>
+    <rect class="box" x="620" y="44" width="320" height="56" rx="12"/><text class="t" x="636" y="66">Home</text><text class="s" x="636" y="86">pick up · Discover skills · live now · needs you</text>
+    <rect class="box" x="620" y="110" width="320" height="56" rx="12"/><text class="t" x="636" y="132">Projects</text><text class="s" x="636" y="152">all · favorites · collections · Skills · Discover</text>
+    <rect class="box" x="620" y="176" width="320" height="56" rx="12"/><text class="t" x="636" y="198">A project’s page</text><text class="s" x="636" y="218">Map (live) · Sessions · Notes · Setup</text>
+    <rect class="box" x="620" y="242" width="320" height="56" rx="12"/><text class="t" x="636" y="264">History</text><text class="s" x="636" y="284">your week · days with work · skills you use</text>
+    <rect class="box" x="620" y="308" width="320" height="56" rx="12"/><text class="t" x="636" y="330">Settings</text><text class="s" x="636" y="350">folders · AI agents · Obsidian · updates · privacy</text>
+  </g>
+  <path class="ln" d="M560 215 C590 215 590 72 620 72" marker-end="url(#ar)"/>
+  <path class="ln" d="M560 220 C590 220 590 138 620 138" marker-end="url(#ar)"/>
+  <path class="ln" d="M560 228 C590 228 590 204 620 204" marker-end="url(#ar)"/>
+  <path class="ln" d="M560 236 C590 236 590 270 620 270" marker-end="url(#ar)"/>
+  <path class="ln" d="M560 244 C590 244 590 336 620 336" marker-end="url(#ar)"/>
+
+  <text class="h" x="340" y="420">What PoHo gives back</text>
+  <rect class="box" x="340" y="436" width="280" height="56" rx="12"/><text class="t" x="356" y="458">To your AI</text><text class="s" x="356" y="478">a briefing at chat start · answers (MCP)</text>
+  <rect class="box opt" x="640" y="436" width="300" height="56" rx="12"/><text class="t" x="656" y="458">To Obsidian (optional)</text><text class="s" x="656" y="478">linked notes in your vault’s PoHo folder</text>
+  <path class="lna" d="M450 290 L450 432" marker-end="url(#ara)"/>
+  <path class="lna" d="M520 290 C520 380 790 380 790 432" marker-end="url(#ara)"/>
+
+  <text class="s" x="20" y="530">Nothing is deleted. Your code never leaves your computer. Dashed boxes are optional.</text>
+</svg>
+</figure>
+<h2 id="top-bar">Top bar</h2>
+<ul><li><strong>Home</strong>, <strong>Projects</strong>, <strong>History</strong>: the three pages.</li><li><strong>Jump to a project…</strong> (<strong>Ctrl P</strong>): search for a project or for something you asked an AI. <strong>Alt+Space</strong> opens the same search from any app.</li><li><strong>New project</strong>: start a new project from a template.</li><li>⚙ (<strong>Settings and more</strong>): <strong>Settings</strong> (<strong>Ctrl ,</strong>), <strong>AI add-on</strong>, <strong>Look for new projects</strong>, this computer’s name, <strong>Welcome screen</strong>, <strong>Help center</strong> and <strong>Report a bug</strong>.</li><li>The back arrow (<strong>Alt+Left</strong>) returns to the page you came from.</li></ul>
+<h2 id="home">Home</h2>
+<p>The big card shows the project you were last in, where you stopped and what comes next, with one button to get back in. Below it:</p>
+<ul><li><strong>Discover new skills for</strong> a project;</li><li><strong>This week</strong>, <strong>Claude limit</strong> and <strong>To push</strong> (commits not on GitHub yet);</li><li><strong>Favorites</strong> and <strong>Also in progress</strong>.</li></ul>
+<p>On the side: <strong>Live now</strong> (AI tools working or waiting), <strong>Needs you</strong> (loose ends and pull requests) and <strong>Your tools</strong>.</p>
+<h2 id="projects">Projects</h2>
+<p>Tabs: <strong>All</strong>, <strong>Favorites</strong> and <strong>Skills</strong> (your skills library, with <strong>Discover</strong> to find new ones). <strong>Running</strong> and <strong>Archived</strong> appear when there is something in them. Next to the tabs are your collections, <strong>New collection</strong> and <strong>Sort automatically</strong>. <strong>Add folder</strong> adds more project folders.</p>
+<h2 id="a-project-s-page">A project’s page</h2>
+<p>The top shows the project, its git state and the main button (<strong>Continue in …</strong>, <strong>Pick up with …</strong> or <strong>Open in</strong>), plus <strong>More ways</strong>. Tabs:</p>
+<ul><li><strong>Map</strong>: the project in the centre with its AI tools, code, dev server and services around it.</li><li><strong>Sessions</strong>: every AI chat in this project.</li><li><strong>Notes</strong>: your own notes and recent activity.</li><li><strong>Setup</strong>: run command, files for AI agents, skills, picture and snapshots.</li></ul>
+<h2 id="history">History</h2>
+<p><strong>This week</strong> and <strong>Last week</strong>, <strong>Days with work</strong>, <strong>This month by project</strong>, <strong>Skills and tools you use</strong>, <strong>Is your code backed up?</strong> and <strong>AI use by month</strong>.</p>
+<h2 id="settings">Settings</h2>
+<p>Pages: <strong>General</strong>, <strong>Projects &amp; folders</strong>, <strong>AI add-on</strong>, <strong>AI agents</strong>, <strong>Editor &amp; terminal</strong>, <strong>Tools</strong>, <strong>Notifications</strong>, <strong>Privacy &amp; safety</strong>, <strong>Updates</strong> and <strong>Account &amp; sync</strong>.</p>
+<h2 id="where-the-information-comes-from">Where the information comes from</h2>
+<ul><li><strong>Your folders</strong>: names, READMEs, project files, in the folders you added.</li><li><strong>Your AI tools’ chat history</strong>: the sessions Claude Code, Codex, Gemini CLI, OpenCode and Antigravity save on this computer.</li><li><strong>Git</strong>: branch, commits and uncommitted changes.</li><li><strong>The optional AI add-on</strong>: summaries in plain words, only if you turn it on.</li></ul>
+<p>All of it stays on your computer, except the short excerpts the AI add-on sends to Claude when you use your own Claude key. A local AI (Ollama) sends nothing.</p>
+<nav class="pager"><a class="prev" href="../start/what-is-poho.html"><span>Previous</span>What PoHo does for you</a><a class="next" href="../get-started/install.html"><span>Next</span>Install PoHo</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#top-bar">Top bar</a></li><li><a href="#home">Home</a></li><li><a href="#projects">Projects</a></li><li><a href="#a-project-s-page">A project’s page</a></li><li><a href="#history">History</a></li><li><a href="#settings">Settings</a></li><li><a href="#where-the-information-comes-from">Where the information comes from</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>Snapshots before AI sessions · PoHo Base Help</title>
+<meta name="description" content="PoHo saves your project before every AI session, so you can put back any file an agent broke." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html" aria-current="page">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Safety and privacy</p>
+<h1>Snapshots before AI sessions</h1>
+<p class="lead">PoHo saves your project before every AI session, so you can put back any file an agent broke.</p>
+<p>Before an AI session starts, PoHo saves your project, so you can put back anything an agent broke, one file or all of them. You don’t have to do anything: it happens on its own for every project that uses git.</p>
+<h2 id="when-a-snapshot-is-taken">When a snapshot is taken</h2>
+<ul><li>When you continue or start a chat from PoHo.</li><li>When Claude Code or Cursor starts a session on its own, if you connected them in <strong>Settings → AI agents</strong>.</li><li>When you click <strong>Save snapshot now</strong>.</li></ul>
+<h2 id="where-snapshots-live">Where snapshots live</h2>
+<p>Snapshots are hidden inside the project’s own <code>.git</code> folder. They never change your files, branches or history, and a normal <code>git push</code> doesn’t send them. PoHo keeps the newest 30.</p>
+<p><code>.env</code> files are never saved in a snapshot, and never restored over. Files your <code>.gitignore</code> leaves out, such as <code>node_modules</code>, aren’t saved either.</p>
+<h2 id="see-what-changed-and-put-files-back">See what changed and put files back</h2>
+<ol><li>Open the project and go to <strong>Setup</strong>.</li><li>In <strong>Snapshots</strong>, click a snapshot to see the files that changed since.</li><li>Click <strong>Restore</strong> next to one file, or <strong>Restore all</strong>.</li><li>Confirm.</li></ol>
+<p>You can also open a session on the <strong>Sessions</strong> tab and fold open <strong>What this session changed</strong>.</p>
+<p>When you restore, PoHo saves the current state first, so you can undo it. If that safety snapshot can’t be made, nothing is restored. Files that are new since the snapshot are left as they are.</p>
+<h2 id="when-there-is-no-snapshot">When there is no snapshot</h2>
+<ul><li><strong>The project doesn’t use git.</strong> Snapshots need git.</li><li><strong>Nothing changed</strong> since the last snapshot.</li><li><strong>More than 5,000 untracked files</strong>, often a <code>node_modules</code> folder without a <code>.gitignore</code>.</li><li><strong>The project’s git settings name a program to run.</strong> PoHo doesn’t touch such a repository, to keep you safe.</li></ul>
+<div class="callout callout-note"><p><strong>Note:</strong> The <strong>Snapshots</strong> list shows the newest 10.</p></div>
+<p>Related: <a href="never-deletes.html">What PoHo never does</a></p>
+<nav class="pager"><a class="prev" href="../safety/never-deletes.html"><span>Previous</span>What PoHo never does</a><a class="next" href="../safety/privacy.html"><span>Next</span>Privacy in short</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#when-a-snapshot-is-taken">When a snapshot is taken</a></li><li><a href="#where-snapshots-live">Where snapshots live</a></li><li><a href="#see-what-changed-and-put-files-back">See what changed and put files back</a></li><li><a href="#when-there-is-no-snapshot">When there is no snapshot</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

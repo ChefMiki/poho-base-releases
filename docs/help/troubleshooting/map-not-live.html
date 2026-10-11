@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>The map doesn’t come alive · PoHo Base Help</title>
+<meta name="description" content="When the project map shows something running, and why it may stay quiet." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html" aria-current="page">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Troubleshooting</p>
+<h1>The map doesn’t come alive</h1>
+<p class="lead">When the project map shows something running, and why it may stay quiet.</p>
+<p>The map comes alive only while it is open and PoHo’s window is visible. Then PoHo checks every 5 seconds what runs in the project; if it finds a program working there, an AI working or the dev server running, the centre turns green and breathes.</p>
+<h2 id="how-poho-finds-what-runs-in-a-project">How PoHo finds what runs in a project</h2>
+<p>A program counts for a project when:</p>
+<ul><li>it works in the project folder (its current folder is the project or a folder inside it), or</li><li>its command line or program path names the project folder, or</li><li>it belongs to an AI chat PoHo knows,</li></ul>
+<p>plus every program those start. So a dev server you start in a terminal (<code>node server.js</code>, <code>python app.py</code>) counts even if you didn’t start it from PoHo.</p>
+<p>These never count: PoHo itself, a terminal that only sits in the folder (what it starts does count), git and Windows system programs. Editors such as VS Code or Cursor are shown under “Open in” instead, because one editor serves many projects.</p>
+<p>An AI that PoHo sees working, from its chat file or the briefing connection, also makes the centre come alive, even when its program isn’t found. See <a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a>.</p>
+<h2 id="why-it-may-stay-quiet">Why it may stay quiet</h2>
+<ul><li><strong>The map is not open, or PoHo is minimised.</strong> PoHo looks only while you watch.</li><li><strong>The program runs somewhere else.</strong> If it started in another folder and doesn’t name the project folder, PoHo can’t tell it belongs to the project.</li><li><strong>PowerShell is limited on your computer.</strong> PoHo asks Windows through PowerShell. On computers that limit PowerShell (Constrained Language Mode, often set by a company), PoHo can’t read each program’s current folder; it still finds programs whose command line names the project folder. If PowerShell is blocked completely, the map can’t see programs at all.</li><li><strong>It is not Windows.</strong> The live map works on Windows only.</li></ul>
+<div class="callout callout-tip"><p><strong>Tip:</strong> To be sure a dev server shows up, start it with <strong>Run the dev server</strong> in the map’s dev server panel, or start it from a terminal opened in the project folder.</p></div>
+<p>See also <a href="../get-back-to-work/live-map.html">See what a project is running</a>.</p>
+<nav class="pager"><a class="prev" href="../troubleshooting/ai-not-shown.html"><span>Previous</span>PoHo doesn’t show my AI working</a><a class="next" href="../troubleshooting/update-not-arriving.html"><span>Next</span>An update doesn’t arrive</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#how-poho-finds-what-runs-in-a-project">How PoHo finds what runs in a project</a></li><li><a href="#why-it-may-stay-quiet">Why it may stay quiet</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>

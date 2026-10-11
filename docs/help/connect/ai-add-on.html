@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex" />
+<title>The AI add-on (Ollama or a Claude key) · PoHo Base Help</title>
+<meta name="description" content="An optional AI that explains each project and session in plain words, running free on your computer through Ollama or with your own Claude API key." />
+<link rel="icon" href="../../assets/icon.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="../help.css" />
+</head>
+<body>
+<a class="skip" href="#main">Skip to the article</a>
+<header class="top">
+  <a class="brand" href="../index.html"><img src="../../assets/icon.svg" alt="" width="26" height="26" /> PoHo Base <span>Help</span></a>
+  <label class="search"><span class="sr-only">Search help</span><input id="q" type="search" placeholder="Search help" autocomplete="off" data-root="../" /><div id="results" role="listbox" hidden></div></label>
+  <nav class="top-links"><a href="../blog/index.html">Blog</a><a href="../../index.html">Download</a></nav>
+  <button class="menu" id="menu" aria-expanded="false" aria-controls="side">Menu</button>
+</header>
+<div class="wrap">
+  <aside class="side" id="side"><div class="side-group"><p>Welcome</p><ul><li><a href="../start/what-is-poho.html">What PoHo does for you</a></li><li><a href="../start/app-map.html">Map of the app</a></li></ul></div><div class="side-group"><p>Get started</p><ul><li><a href="../get-started/install.html">Install PoHo</a></li><li><a href="../get-started/first-start.html">The first start</a></li><li><a href="../get-started/add-folders.html">Add your project folders</a></li><li><a href="../get-started/connect-ai-tools.html">Connect your AI tools</a></li><li><a href="../get-started/updates.html">Updates and beta versions</a></li></ul></div><div class="side-group"><p>Get back to work</p><ul><li><a href="../get-back-to-work/pick-up.html">Pick up where you stopped</a></li><li><a href="../get-back-to-work/find-a-project.html">Find any project</a></li><li><a href="../get-back-to-work/project-page.html">Everything about one project</a></li><li><a href="../get-back-to-work/live-map.html">See what a project is running</a></li><li><a href="../get-back-to-work/notes.html">Your notes</a></li><li><a href="../get-back-to-work/history.html">Your week and your history</a></li></ul></div><div class="side-group"><p>Work with AI agents</p><ul><li><a href="../ai-agents/briefing.html">What your AI is told when a chat starts</a></li><li><a href="../ai-agents/ask-poho.html">Let your AI ask PoHo (MCP)</a></li><li><a href="../ai-agents/accounts-and-limits.html">Claude accounts and limits</a></li><li><a href="../ai-agents/restart-session.html">Restart a chat with fresh skills</a></li></ul></div><div class="side-group"><p>Skills</p><ul><li><a href="../skills/skills-library.html">Your skills library</a></li><li><a href="../skills/discover.html">Find new skills</a></li><li><a href="../skills/skills-for-a-project.html">Skills that fit a project</a></li><li><a href="../skills/install-and-update-skills.html">Install and update skills</a></li></ul></div><div class="side-group"><p>Connect other apps</p><ul><li><a href="../connect/obsidian.html">Obsidian</a></li><li><a href="../connect/github.html">GitHub</a></li><li><a href="../connect/ai-add-on.html" aria-current="page">The AI add-on (Ollama or a Claude key)</a></li></ul></div><div class="side-group"><p>Safety and privacy</p><ul><li><a href="../safety/what-poho-reads.html">What PoHo reads and writes</a></li><li><a href="../safety/never-deletes.html">What PoHo never does</a></li><li><a href="../safety/snapshots.html">Snapshots before AI sessions</a></li><li><a href="../safety/privacy.html">Privacy in short</a></li></ul></div><div class="side-group"><p>Settings</p><ul><li><a href="../settings/settings.html">Every setting, explained</a></li></ul></div><div class="side-group"><p>Troubleshooting</p><ul><li><a href="../troubleshooting/missing-skills.html">I don’t see all my skills</a></li><li><a href="../troubleshooting/ai-not-shown.html">PoHo doesn’t show my AI working</a></li><li><a href="../troubleshooting/map-not-live.html">The map doesn’t come alive</a></li><li><a href="../troubleshooting/update-not-arriving.html">An update doesn’t arrive</a></li><li><a href="../troubleshooting/windows-blocks.html">Windows blocks PoHo</a></li><li><a href="../troubleshooting/report-a-problem.html">Report a problem</a></li></ul></div><div class="side-group"><p>FAQ</p><ul><li><a href="../faq/faq.html">Questions people ask</a></li></ul></div></aside>
+  <main id="main"><article class="doc">
+<p class="crumb">Connect other apps</p>
+<h1>The AI add-on (Ollama or a Claude key)</h1>
+<p class="lead">An optional AI that explains each project and session in plain words, running free on your computer through Ollama or with your own Claude API key.</p>
+<p>PoHo works fully without AI. The AI add-on is optional: it writes what each project is about, what each AI session did, and where you stopped as a short, clear story. You choose a free AI on your own computer (Ollama) or your own Claude API key.</p>
+<h2 id="turn-it-on">Turn it on</h2>
+<ol><li>Open <strong>Settings</strong> (Ctrl+,) and go to <strong>AI add-on</strong>.</li><li>Choose one:<ul><li><strong>No AI</strong>: everything still works, built from your files and sessions.</li><li><strong>Local AI</strong>: free, runs on this computer, works offline.</li><li><strong>Claude API</strong>: your own API key, paid per use.</li></ul></li></ol>
+<h2 id="local-ai-with-ollama">Local AI with Ollama</h2>
+<p>PoHo checks whether your computer can run a local model and suggests one that fits your graphics card. Then follow the steps:</p>
+<ol><li><strong>Install Ollama</strong> (click <strong>Get Ollama</strong>).</li><li><strong>Download the model</strong>. PoHo shows the progress; a model is a few gigabytes.</li><li><strong>Summarize your projects</strong>: click <strong>Summarize all</strong>. It runs in the background, one project at a time.</li></ol>
+<p>If Ollama is already installed, PoHo finds it and the models you have, and picks the best one.</p>
+<h2 id="your-own-claude-key">Your own Claude key</h2>
+<ol><li>Choose <strong>Claude API</strong>.</li><li>Paste your key into <strong>Anthropic API key</strong> and click <strong>Save</strong>.</li></ol>
+<p>The key is encrypted with Windows’ own protection when it is available. <strong>Remove</strong> deletes it from PoHo.</p>
+<h2 id="what-it-does">What it does</h2>
+<ul><li>A summary on each project page: what it is, how it’s built and what to look at next. Click <strong>Summarize with AI</strong> or <strong>Regenerate</strong>.</li><li>A title, what was done and what is left for each AI session.</li><li>A clearer “where you stopped”.</li></ul>
+<p>Turn on <strong>Automatically summarize new and changed projects</strong> to keep them current. Summaries use only facts from your files and sessions.</p>
+<h2 id="what-is-sent-where">What is sent where</h2>
+<ul><li><strong>Local AI:</strong> text goes to Ollama on this computer. Only downloading a model contacts ollama.com.</li><li><strong>Claude API:</strong> PoHo sends Anthropic the README, CLAUDE.md and AGENTS.md (shortened), file names, text shown on the app’s screens, and what you asked your AI agents and their last replies (which can quote code). Never whole source files. Keys, tokens and passwords are removed first.</li></ul>
+<p>See <a href="../safety/privacy.html">Privacy in short</a>.</p>
+<nav class="pager"><a class="prev" href="../connect/github.html"><span>Previous</span>GitHub</a><a class="next" href="../safety/what-poho-reads.html"><span>Next</span>What PoHo reads and writes</a></nav>
+</article>
+<nav class="onpage" aria-label="On this page"><p>On this page</p><ul><li><a href="#turn-it-on">Turn it on</a></li><li><a href="#local-ai-with-ollama">Local AI with Ollama</a></li><li><a href="#your-own-claude-key">Your own Claude key</a></li><li><a href="#what-it-does">What it does</a></li><li><a href="#what-is-sent-where">What is sent where</a></li></ul></nav></main>
+</div>
+<script src="../help.js" defer></script>
+</body>
+</html>
